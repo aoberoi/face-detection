@@ -32,12 +32,16 @@ body {
 	background: black;
 	-webkit-transform: scale(-1, 1);
 }
+
+.source-publisher {
+  visibility: hidden;
+}
 		</style>
 	</head>
 	<body>
 		<p id="info">Please allow access to your camera!</p>
 		<canvas id="output"></canvas>
-                <div id="publisher"></div>
+                <div id="publisher" class="source-publisher"></div>
 		<script src="ccv.js"></script>
 		<script src="face.js"></script>
 		<script>
@@ -169,9 +173,9 @@ App.init = function() {
 	//App.video.load();
 };
 
-var sessionId = '1_MX45MDE4NTJ-MTI3LjAuMC4xflNhdCBNYXIgMzAgMDc6Mjc6MzIgUERUIDIwMTN-MC40MjcyNjY0OH4';
+var sessionId = '2_MX45MDE4NTJ-MTI3LjAuMC4xflRodSBKdWwgMTEgMDg6MDg6NDkgUERUIDIwMTN-MC4xMjk5NDQzOH4';
 var apiKey = '901852';
-var token = 'T1==cGFydG5lcl9pZD05MDE4NTImc2RrX3ZlcnNpb249dGJydWJ5LXRicmItdjAuOTEuMjAxMS0wMi0xNyZzaWc9OWJlYTI0MzljNmM5ZmM5MDYzNGQzZjk0MjNlYmRmYjk1YjY3MGE5ZDpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0NU1ERTROVEotTVRJM0xqQXVNQzR4ZmxOaGRDQk5ZWElnTXpBZ01EYzZNamM2TXpJZ1VFUlVJREl3TVROLU1DNDBNamN5TmpZME9INCZjcmVhdGVfdGltZT0xMzY0NjUzNzA3Jm5vbmNlPTAuMzA3MzczMzg2NjYxOTgyNDQmZXhwaXJlX3RpbWU9MTM2NzI0NTcwNyZjb25uZWN0aW9uX2RhdGE9';
+var token = 'T1==cGFydG5lcl9pZD05MDE4NTImc2RrX3ZlcnNpb249dGJydWJ5LXRicmItdjAuOTEuMjAxMS0wMi0xNyZzaWc9MzgxNjk0NzEyYTMzM2ZiZWNmMmE5NzQ5MDMxZWZhNGRiYTg1NjA3MTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0NU1ERTROVEotTVRJM0xqQXVNQzR4ZmxSb2RTQktkV3dnTVRFZ01EZzZNRGc2TkRrZ1VFUlVJREl3TVROLU1DNHhNams1TkRRek9INCZjcmVhdGVfdGltZT0xMzc4NTgyMjMzJm5vbmNlPTAuNDYzOTUzNzY5MzIxOTMxMSZleHBpcmVfdGltZT0xMzc4NjY4NjMzJmNvbm5lY3Rpb25fZGF0YT0=';
 
 var session = TB.initSession(sessionId);
 
